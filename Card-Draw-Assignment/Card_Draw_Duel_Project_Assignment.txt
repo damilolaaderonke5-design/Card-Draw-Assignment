@@ -1,0 +1,55 @@
+=====================================================
+PROJECT: Card Draw Duel
+=====================================================
+You're building a simple web page that settles arguments
+the way Dicee settled them with dice, but with playing
+cards instead. Every time the page is refreshed, Player 1
+and Player 2 each draw a random card (numbered 1 to 13,
+representing Ace through King). Whoever draws the higher
+number wins. The page should announce the winner using
+text on the page (not an alert).
+
+WHAT YOU'RE GIVEN:
+- A skeleton index.html and style.css with the layout
+  already built (see the starter files).
+- 13 card image files named card1.png through card13.png
+ 
+
+WHAT YOU NEED TO BUILD (script.js):
+
+STEP 1:
+Generate a random number between 1 and 13 for Player 1's
+card, and a separate random number between 1 and 13 for
+Player 2's card.
+
+STEP 2:
+Use the DOM to select the two <img> elements for each
+player's card (they already have IDs in the starter HTML,
+check the file for the exact names).
+
+STEP 3:
+Change the "src" attribute of each image so it points to
+the correct card image file based on the random number
+you generated. For example, if Player 1's random number
+is 7, their image src should become "images/card7.png".
+Hint: you can build this file path using string
+concatenation, since the file names follow a predictable
+pattern.
+
+STEP 4:
+Select the <h1> element on the page (or a dedicated
+result element, check the starter HTML) and use it to
+display the outcome as text:
+  - If Player 1's number is higher, show "Player 1 Wins!"
+  - If Player 2's number is higher, show "Player 2 Wins!"
+  - If both numbers are equal, show "Draw!"
+
+
+STRETCH GOALS (optional):
+- Instead of requiring a full page refresh, add a "Draw
+  Again" button that re-runs the logic without reloading
+  the page.
+- Add a running score that tracks how many times each
+  player has won, stored in a variable (this will reset on
+  refresh, that's expected, don't worry about saving it
+  permanently yet).
